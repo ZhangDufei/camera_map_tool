@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">camera</string>
+    <string name="add_task"><![CDATA[<string name=\"add_task\">添加任务</string>]]></string>
+</resources>

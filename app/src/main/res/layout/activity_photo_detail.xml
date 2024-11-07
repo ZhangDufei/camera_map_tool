@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/darker_gray"/>
+
+    <ImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/coordinates_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="坐标"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/pitch_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="俯仰角度"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/azimuth_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="方位角"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/building_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="建筑物名称"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/building_coordinates_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="建筑物坐标"
+        android:padding="8dp" />
+
+
+
+</LinearLayout>
