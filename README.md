@@ -1,1 +1,0 @@
-# camera_map_tool

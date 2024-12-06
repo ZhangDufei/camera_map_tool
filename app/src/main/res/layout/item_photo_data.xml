@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 建筑物名称 -->
+    <TextView
+        android:id="@+id/building_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="建筑物"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:gravity="start" />
+
+    <!-- 经纬度 -->
+    <TextView
+        android:id="@+id/coordinates_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="经纬度"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:gravity="start" />
+
+    <!-- 俯仰角度 -->
+    <TextView
+        android:id="@+id/pitch_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="俯仰角度"
+        android:textSize="16sp"
+        android:gravity="start" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp">
+
+        <!-- 收藏按钮 -->
+        <ImageButton
+            android:id="@+id/favorite_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_input_get"
+            android:contentDescription="Favorite"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginEnd="8dp" /> <!-- 给按钮设置一些右边距 -->
+
+        <!-- 删除按钮 -->
+        <ImageButton
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="Delete"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginStart="8dp" /> <!-- 给按钮设置一些左边距 -->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+</LinearLayout>
+
